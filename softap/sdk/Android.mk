@@ -14,6 +14,8 @@ ifeq ($(PRODUCT_VENDOR_MOVE_ENABLED), true)
 LOCAL_VENDOR_MODULE := true
 endif
 
+LOCAL_CFLAGS := -Wno-error
+
 LOCAL_CFLAGS += -DSDK_VERSION=\"0.0.1.0\"
 
 LOCAL_LDLIBS := -llog
